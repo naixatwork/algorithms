@@ -16,19 +16,17 @@ function hasIdenticals(snowflakes) {
 
 function program() {
     const integers = [];
-    const amountOfIntegers = 0;
+    let amountOfIntegers = 0;
 
     const readAmountOfIntegersFromReadLine = () => {
         const input = readlineSync.question("provide number of integers: ");
-        const amount = parseInt(amount);
+        const amount = parseInt(input);
         return amount;
     }
 
     const setTheAmountOfIntegers = () => {
         amountOfIntegers = readAmountOfIntegersFromReadLine();
     }
-
-    setTheAmountOfIntegers();
 
     const setIntegers = (integer) => {
         integers.push(integer);
@@ -40,11 +38,16 @@ function program() {
         return integer;
     }
 
-    for (let index = 0; index < amountOfIntegers; index++) {
-        integers.push(parseInt());
-        console.log(integers);
+    const setIntegersAccordingToTheAmount = () => {
+        for (let index = 0; index < amountOfIntegers; index++) {
+            const integer = readIntegerFromReadLine();
+            setIntegers(integer);
+            console.log(integers);
+        }
     }
 
+    setTheAmountOfIntegers();
+    setIntegersAccordingToTheAmount();
     hasIdenticals(integers);
 }
 
