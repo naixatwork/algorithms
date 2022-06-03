@@ -19,9 +19,7 @@ Snowflakes can also have repeated integers, such as
 
 ---
 
-What does it mean for two snowflakes to be identical? Let’s work up to
-
-that definition through a few examples.
+What does it mean for two snowflakes to be identical? Let’s work up to that definition through a few examples.
 First we’ll look at these two snowflakes:
 
 ---
